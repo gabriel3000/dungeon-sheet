@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Dungeon Sheet</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <form id="ds-form">
+      <input type="submit" value="save"/>
+      <h1>Dungeon Sheet</h1>
+      <div class="ds-top-wrap">
+        <div class="ds-top-left">
+          <div class="ds-input">
+            <label>Character Name</label>
+            <input name="ds-char-name" type="text" value=""/>
+          </div>
+        </div>
+        <div class="ds-top-right">
+          <div class="ds-input">
+            <label>Class & Level</label>
+            <input name="ds-class-level" type="text" value=""/>
+          </div>
+          <div class="ds-input">
+            <label>Background</label>
+            <input name="ds-background" type="text" value=""/>
+          </div>
+          <div class="ds-input">
+            <label>Player Name</label>
+            <input name="ds-player-name" type="text" value=""/>
+          </div>
+          <div class="ds-input">
+            <label>Race</label>
+            <input name="ds-race" type="text" value=""/>
+          </div>
+          <div class="ds-input">
+            <label>Alignment</label>
+            <input name="ds-alignment" type="text" value=""/>
+          </div>
+          <div class="ds-input">
+            <label>Experience Points</label>
+            <input name="ds-experience-points" type="text" value=""/>
+          </div>
+        </div>
+      </div>
+      <div class="ds-body-wrap">
+        <div class="ds-body-left">
+          <div class="ds-input">
+            <label>Proficiency Bonus</label>
+            <input name="ds-proficiency-bonus" type="text" value=""/>
+          </div>
+          <div class="ds-input">
+            <label>Inspiration</label>
+            <input type="text" name="ds-inspiration" value=""/>
+          </div>
+          <div class="ds-stats ds-stats__strength">
+            <div class="ds-stats__left">
+              <div class="ds-input">
+                <label>Strength</label>
+                <input type="text" name="ds-strength"/>
+                <input type="text" name="ds-strength-mod"/>
+              </div>
+            </div>
+            <div class="ds-stats__right">
+              <div class="ds-input">
+                <label>Saving Throws</label>
+                <input type="text" name="ds-strength-saving-throws"/>
+              </div>
+              <div class="ds-input">
+                <label>Athletics</label>
+                <input type="text" name="ds-athletics"/>
+              </div>
+            </div>
+          </div>
+          <div class="ds-stats ds-stats__dexterity">
+            <div class="ds-stats__left">
+              <div class="ds-input">
+                <label>Dexterity</label>
+                <input type="text" name="ds-dexterity"/>
+                <input type="text" name="ds-dexterity-mod"/>
+              </div>
+            </div>
+            <div class="ds-stats__right">
+              <div class="ds-input">
+                <label>Saving Throws</label>
+                <input type="text" name="ds-dexterity-saving-throws"/>
+              </div>
+              <div class="ds-input">
+                <label>Acrobatics</label>
+                <input type="text" name="ds-acrobatics"/>
+              </div>
+              <div class="ds-input">
+                <label>Slight of Hand</label>
+                <input type="text" name="ds-dexterity-mod"/>
+              </div>
+              <div class="ds-input">
+                <label>Stealth</label>
+                <input type="text" name="ds-stealth"/>
+              </div>
+            </div>
+          </div>
+          <div class="ds-stats ds-stats__constitution">
+            <div class="ds-stats__left">
+              <div class="ds-input">
+                <label>Constitution</label>
+                <input type="text" name="ds-constitution" value=""/>
+                <input type="text" name="ds-constitution-mod" value=""/>
+              </div>
+            </div>
+            <div class="ds-stats__right">
+              <div class="ds-input">
+                <label>Saving Throws</label>
+                <input type="text" name="ds-constitution-saving-throws" value=""/>
+              </div>
+            </div>
+          </div>
+          <div class="ds-stats ds-stats__intelligence">
+            <div class="ds-stats__left">
+              <div class="ds-input">
+                <label>Intelligence</label>
+                <input type="text" name="ds-intelligence" value=""/>
+                <input type="text" name="ds-intelligence-mod" value=""/>
+              </div>
+            </div>
+            <div class="ds-stats__right">
+              <div class="ds-input">
+                <label>Saving Throws</label>
+                <input type="text" name="ds-intelligence-saving-throws" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Arcana</label>
+                <input type="text" name="ds-arcana" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>History</label>
+                <input type="text" name="ds-history" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Investigation</label>
+                <input type="text" name="ds-investigation" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Nature</label>
+                <input type="text" name="ds-nature" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Religion</label>
+                <input type="text" name="ds-religion" value=""/>
+              </div>
+            </div>
+          </div>
+          <div class="ds-stats ds-stats__wisdom">
+            <div class="ds-stats__left">
+              <div class="ds-input">
+                <label>Wisdom</label>
+                <input type="text" name="ds-wisdom" value=""/>
+                <input type="text" name="ds-wisdom-mod" value=""/>
+              </div>
+            </div>
+            <div class="ds-stats__right">
+              <div class="ds-input">
+                <label>Saving Throws</label>
+                <input type="text" name="ds-wisdom-saving-throws" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Animal Handling</label>
+                <input type="text" name="ds-animal-handling" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Insight</label>
+                <input type="text" name="ds-insight" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Medicine</label>
+                <input type="text" name="ds-medicine" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Perception</label>
+                <input type="text" name="ds-perception" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Survival</label>
+                <input type="text" name="ds-survival" value=""/>
+              </div>
+            </div>
+          </div>
+          <div class="ds-stats ds-stats__charisma">
+            <div class="ds-stats__left">
+              <div class="ds-input">
+                <label>Charisma</label>
+                <input type="text" name="ds-charisma" value=""/>
+                <input type="text" name="ds-charisma-mod" value=""/>
+              </div>
+            </div>
+            <div class="ds-stats__right">
+              <div class="ds-input">
+                <label>Saving Throws</label>
+                <input type="text" name="ds-charisma-saving-throws" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Deception</label>
+                <input type="text" name="ds-deception" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Intimidation</label>
+                <input type="text" name="ds-intimidation" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Performance</label>
+                <input type="text" name="ds-performance" value=""/>
+              </div>
+              <div class="ds-input">
+                <label>Persuasion</label>
+                <input type="text" name="ds-persuasion" value=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ds-body-center">
+          <div class="ds-input ds-input__armor-class">
+            <label>Armor Class</label>
+            <input type="text" name="ds-armor-class" value=""/>
+          </div>
+          <div class="ds-input ds-input__initiative">
+            <label>Initiative</label>
+            <input type="text" name="ds-initiative" value=""/>
+          </div>
+          <div class="ds-input ds-input__speed">
+            <label>Speed</label>
+            <input type="text" name="ds-speed" value=""/>
+          </div>
+          <div class="ds-input ds-input__HP">
+            <label>Current Hit Points</label>
+            <input type="text" name="ds-current-hp" value=""/>
+            <span>Hit Point Max</span><input type="text" name="ds-current-hp-max" value=""/>
+          </div>
+          <div class="ds-input ds-input__THP">
+            <label>Temporary Hit Points</label>
+            <input type="text" name="ds-temp-hp" value=""/>
+          </div>
+          <div class="ds-input ds-input__hit-dice">
+            <label>Hit Dice</label>
+            <input type="text" name="ds-hit-dice" value=""/>
+            <span>Total Hit Dice</span><input name="ds-total-hit-dice" type="text" value=""/>
+          </div>
+          <div class="ds-input ds-input__death-saves">
+            <label>Death Saves</label>
+              <div>
+                <span>successes</span>
+                <input type="checkbox"/>
+                <input type="checkbox"/>
+                <input type="checkbox"/>
+              </div>
+              <div>
+                <span>failure</span>
+                <input type="checkbox"/>
+                <input type="checkbox"/>
+                <input type="checkbox"/>
+              </div>
+          </div>
+          <div class="ds-input ds-attacks-spellcasting">
+            <p>Attacks and Spellcasting</p>
+            <textarea name="ds-attacks-and-spellcasting"></textarea>
+          </div>
+        </div>
+        <div class="ds-body-right">
+          <div class="ds-input ds-input__personality-traits">
+            <label>Personality Traits</label>
+            <textarea name="ds-personality-and-traits"></textarea>
+          </div>
+          <div class="ds-input ds-input__ideals">
+            <label>Ideals</label>
+            <textarea name="ds-ideals"></textarea>
+          </div>
+          <div class="ds-input ds-input__bonds">
+            <label>Bonds</label>
+            <textarea name="ds-bonds"></textarea>
+          </div>
+          <div class="ds-input ds-input__flaws">
+            <label>Flaws</label>
+            <textarea name="ds-flaws"></textarea>
+          </div>
+          <div class="ds-input ds-input__features-traits">
+            <label>Features &amp; Traits</label>
+            <textarea name="ds-features-and-traits"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="ds-bottom">
+        <div class="ds-input ds-notes">
+          <p>Other Proficiencies &amp; Languages</p>
+          <textarea name="ds-languages"></textarea>
+        </div>
+        <div class="ds-input ds-equipment">
+          <p>Equipment</p>
+          <textarea name="ds-equipment"></textarea>
+        </div>
+      </div>
+    </form>
+    <script src="serialize-0.1.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

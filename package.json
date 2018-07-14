@@ -1,0 +1,18 @@
+{
+  "name": "lastpass.cdn",
+  "version": "1.0.0",
+  "description": "serve and test files to be hosted on lmiutils",
+  "main": "app.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gjablanczy@bitbucket.3amlabs.net/scm/bwt/lastpass.cdn.git"
+  },
+  "author": "Gabriel Jablanczy",
+  "license": "ISC",
+  "devDependencies": {
+    "static-server": "^2.2.0"
+  }
+}
